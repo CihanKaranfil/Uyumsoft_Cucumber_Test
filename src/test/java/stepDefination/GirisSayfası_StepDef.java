@@ -45,4 +45,9 @@ public class GirisSayfası_StepDef {
 
         Driver.getDriver().get(ConfigReader.getProperty(arg0));
     }
+
+    @And("Sayfayı kapar")
+    public void sayfayıKapar() {
+        Driver.closeDriver();
+    }
 }
