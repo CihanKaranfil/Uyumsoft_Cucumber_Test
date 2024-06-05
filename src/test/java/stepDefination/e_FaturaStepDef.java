@@ -37,6 +37,5 @@ public class e_FaturaStepDef {
         eFaturaPages.ulkesec.sendKeys("Türkiye");
         eFaturaPages.sehir.sendKeys("İstanbul");
         eFaturaPages.mahallesec.sendKeys("Kadıköy");
-
     }
 }
