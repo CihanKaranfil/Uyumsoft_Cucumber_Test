@@ -29,7 +29,7 @@ public class e_FaturaStepDef {
     @And("Alıcı VKN bilgisi girer ve firma secer")
     public void alıcıVKNBilgisiGirerVeFirmaSecer() {
         eFaturaPages.aliciVkn.sendKeys("1111113283");
-        eFaturaPages.firmaSecim.click();//firma seçimi yapmıyor
+        eFaturaPages.firmaSecim.click();
     }
 
     @And("Ulke Sehir ve Mahalle seçimi yapar")
