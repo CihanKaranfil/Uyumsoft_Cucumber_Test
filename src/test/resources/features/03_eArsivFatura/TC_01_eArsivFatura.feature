@@ -6,3 +6,6 @@
       And Kullanıcı Oturum Aç butonuna tıklar
       When e-Fatura ve e-Arsiv olustura tıkla
       And Alıcı vkn tckn bilgileri girilir
+      And Alıcı ad soyad bilgileri girilir
+      And Alıcı Sehir ve Mahalle bilgileri girilir
+      And Kaydet butonuna tıklar

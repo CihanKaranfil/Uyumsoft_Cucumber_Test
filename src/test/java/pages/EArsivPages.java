@@ -11,5 +11,11 @@ public class EArsivPages {
         PageFactory.initElements(Driver.getDriver(),this);}
 
     @FindBy(xpath = "//*[@id=\"txtTaxNumber\"]") public WebElement vknTckn;
+    @FindBy(xpath = "//*[@id=\"txtAlias\"]") public WebElement alici;
+    @FindBy(xpath = "//*[@id=\"txtTitle\"]") public WebElement aliciAdi;
+    @FindBy(xpath = "//*[@id=\"txtReceiverPersonSurName\"]") public WebElement aliciSoyadi;
+    @FindBy(xpath = "//*[@id=\"txtCity\"]") public WebElement sehirBilgisi;
+    @FindBy(xpath = "//*[@id=\"txtReceiverDistrict\"]") public WebElement mahalleBilgisi;
+
 
 }
