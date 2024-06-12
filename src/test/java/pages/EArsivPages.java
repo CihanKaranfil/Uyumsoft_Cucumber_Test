@@ -16,6 +16,8 @@ public class EArsivPages {
     @FindBy(xpath = "//*[@id=\"txtReceiverPersonSurName\"]") public WebElement aliciSoyadi;
     @FindBy(xpath = "//*[@id=\"txtCity\"]") public WebElement sehirBilgisi;
     @FindBy(xpath = "//*[@id=\"txtReceiverDistrict\"]") public WebElement mahalleBilgisi;
+    @FindBy(xpath = "//*[@id=\"btnSaveInvoice\"]") public WebElement kaydetButton;
+    @FindBy(xpath = "//*[@id=\"btnAlertModalOk\"]") public WebElement tamamButton;
 
 
 }
