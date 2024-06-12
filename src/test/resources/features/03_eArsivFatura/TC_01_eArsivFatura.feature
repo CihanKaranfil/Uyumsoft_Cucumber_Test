@@ -9,3 +9,9 @@
       And Alıcı ad soyad bilgileri girilir
       And Alıcı Sehir ve Mahalle bilgileri girilir
       And Kaydet butonuna tıklar
+      Then Mal Hizmet butonuna tıklar
+      #And Mal Hizmet bilgileri girilir
+      #And KDV oranı girilir
+      #And Birim Fiyat girilir
+      #And Tamam butonuna tıklar
+
