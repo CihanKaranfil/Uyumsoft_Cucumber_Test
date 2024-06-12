@@ -27,6 +27,7 @@ public class eArsivStepDef {
     public void alıcıSehirVeMahalleBilgileriGirilir() {
         eArsivPages.sehirBilgisi.sendKeys("Malatya");
         eArsivPages.mahalleBilgisi.sendKeys("Battalgazi");
+
     }
 
     @And("Kaydet butonuna tıklar")
