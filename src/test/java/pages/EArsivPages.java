@@ -18,6 +18,10 @@ public class EArsivPages {
     @FindBy(xpath = "//*[@id=\"txtReceiverDistrict\"]") public WebElement mahalleBilgisi;
     @FindBy(xpath = "//*[@id=\"btnSaveInvoice\"]") public WebElement kaydetButton;
     @FindBy(xpath = "//*[@id=\"btnAlertModalOk\"]") public WebElement tamamButton;
+    @FindBy(xpath = "//*[@id=\"container1\"]/div[3]/div[1]/div/header/div[2]/div/nav/div/span[5]/button") public WebElement malHizmetButton;
+    @FindBy(xpath = "//*[@id=\"txtGoodsService\"]") public WebElement malHizmetBilgileri;
+    @FindBy(xpath = "//*[@id=\"txtRateOfTax\"]") public WebElement kdvOrani;
+    @FindBy(xpath = "//*[@id=\"txtUnitPrice\"]") public WebElement birimFiyat;
 
 
 }

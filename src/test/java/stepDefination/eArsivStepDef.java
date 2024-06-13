@@ -1,15 +1,18 @@
 package stepDefination;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.EArsivPages;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
-public class eArsivStepDef {
+public class eArsivStepDef extends ReusableMethods {
 
     EArsivPages eArsivPages = new EArsivPages();
     Actions actions = new Actions(Driver.getDriver());
+
 
     @And("Alıcı vkn tckn bilgileri girilir")
     public void alıcıVknTcknBilgileriGirilir() {
@@ -37,5 +40,34 @@ public class eArsivStepDef {
         eArsivPages.tamamButton.click();
         Thread.sleep(2000);
         actions.moveByOffset(50, 70).click().perform();//Bilgilendirme mesajı kapat
+    }
+
+    @Then("Mal Hizmet butonuna tıklar")
+    public void malHizmetButonunaTıklar() {
+        //scroll(eArsivPages.malHizmetButton);
+        eArsivPages.malHizmetButton.click();
+        click(eArsivPages.malHizmetBilgileri);
+    }
+
+    @And("Mal Hizmet bilgileri girilir")
+    public void malHizmetBilgileriGirilir() {
+        eArsivPages.malHizmetBilgileri.sendKeys("Bilgisayar");
+    }
+
+
+    @And("Birim Fiyat girilir")
+    public void birimFiyatGirilir() {
+        eArsivPages.birimFiyat.sendKeys("25000");
+    }
+
+    @And("KDV oranı girilir")
+    public void kdvOranıGirilir() {
+        eArsivPages.kdvOrani.click();
+        eArsivPages.kdvOrani.clear();
+        eArsivPages.kdvOrani.sendKeys("20", Keys.ENTER);
+    }
+
+    @And("Tamam butonuna tıklar")
+    public void tamamButonunaTıklar() {
     }
 }

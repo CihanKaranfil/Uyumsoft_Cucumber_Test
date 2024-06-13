@@ -10,8 +10,9 @@
       And Alıcı Sehir ve Mahalle bilgileri girilir
       And Kaydet butonuna tıklar
       Then Mal Hizmet butonuna tıklar
-      #And Mal Hizmet bilgileri girilir
-      #And KDV oranı girilir
-      #And Birim Fiyat girilir
-      #And Tamam butonuna tıklar
+      And Mal Hizmet bilgileri girilir
+      And Birim Fiyat girilir
+      And KDV oranı girilir
+      And Tamam butonuna tıklar
+      #bu test çalışıyor devamı yapılacak ve githuba yyolllanacak
 
