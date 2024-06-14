@@ -22,6 +22,7 @@ public class EArsivPages {
     @FindBy(xpath = "//*[@id=\"txtGoodsService\"]") public WebElement malHizmetBilgileri;
     @FindBy(xpath = "//*[@id=\"txtRateOfTax\"]") public WebElement kdvOrani;
     @FindBy(xpath = "//*[@id=\"txtUnitPrice\"]") public WebElement birimFiyat;
+    @FindBy(xpath = "//*[@id=\"btnGoodServicePopup\"]") public WebElement tamamButton2;
 
 
 }
