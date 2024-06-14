@@ -69,5 +69,14 @@ public class eArsivStepDef extends ReusableMethods {
 
     @And("Tamam butonuna tıklar")
     public void tamamButonunaTıklar() {
+        eArsivPages.tamamButton2.click();
+    }
+
+    @Then("Faturanın olustugu dogrulanir")
+    public void faturanınOlustuguDogrulanir() {
+    }
+
+    @And("Gönder butonuna tiklanir")
+    public void gönderButonunaTiklanir() {
     }
 }
