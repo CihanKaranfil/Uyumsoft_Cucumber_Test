@@ -1,4 +1,4 @@
-@uyumsoft
+@uyumsoft222
 Feature:Uyumsoftta e fatura oluşturma
 
   Scenario: Kullanıcı Uyumsoftta e fatura oluşturur
@@ -9,8 +9,16 @@ Feature:Uyumsoftta e fatura oluşturma
     And Alıcı VKN bilgisi girer ve firma secer
     And Ulke Sehir ve Mahalle seçimi yapar
     Then e-Fatura kayıt butonuna tıkla
-      ##bu testin devamı yapılacak
-      ## ürün bilgisi yok
+    And Mal Hizmet butonuna tıklar
+    And Mal Hizmet bilgileri girilir
+    And Birim Fiyat girilir
+    And KDV oranı girilir
+    And Tamam butonuna tıklar
+    Then Faturanın olustugu dogrulanir
+
+   # Bu test çalışıyor
+
+
 
 
 

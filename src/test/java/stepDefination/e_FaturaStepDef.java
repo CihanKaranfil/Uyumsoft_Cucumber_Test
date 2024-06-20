@@ -5,10 +5,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import pages.EArsivPages;
 import pages.EFaturaPages;
 import utilities.Driver;
 
 public class e_FaturaStepDef {
+    EArsivPages eArsivPages = new EArsivPages();
     EFaturaPages eFaturaPages = new EFaturaPages();
 
     Actions actions = new Actions(Driver.getDriver());
@@ -23,7 +25,11 @@ public class e_FaturaStepDef {
     @Then("e-Fatura kayıt butonuna tıkla")
     public void eFaturaKayıtButonunaTıkla() throws InterruptedException {
         eFaturaPages.kaydetButon.click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
+        eArsivPages.tamamButton.click();
+        Thread.sleep(2000);
+        actions.moveByOffset(50, 70).click().perform();//Bilgilendirme mesajı kapat
+
     }
 
     @And("Alıcı VKN bilgisi girer ve firma secer")
