@@ -44,7 +44,7 @@ public class eArsivStepDef extends ReusableMethods {
 
     @Then("Mal Hizmet butonuna tıklar")
     public void malHizmetButonunaTıklar() {
-        //scroll(eArsivPages.malHizmetButton);
+        scroll(eArsivPages.malHizmetButton);
         eArsivPages.malHizmetButton.click();
         click(eArsivPages.malHizmetBilgileri);
     }
@@ -77,6 +77,9 @@ public class eArsivStepDef extends ReusableMethods {
     }
 
     @And("Gönder butonuna tiklanir")
-    public void gönderButonunaTiklanir() {
+    public void gönderButonunaTiklanir() throws InterruptedException {
+        eArsivPages.gonderButton.click();
+        Thread.sleep(1000);
+        eArsivPages.gonderTamamButton.click();
     }
 }

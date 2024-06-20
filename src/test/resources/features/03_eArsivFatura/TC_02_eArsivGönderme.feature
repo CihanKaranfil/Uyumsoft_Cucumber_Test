@@ -16,3 +16,4 @@ Feature: Uyumsoftta e Arsiv Fatura Olusturma
     And Tamam butonuna tıklar
     Then Faturanın olustugu dogrulanir
     And Gönder butonuna tiklanir
+    #bu test çalışıyor
