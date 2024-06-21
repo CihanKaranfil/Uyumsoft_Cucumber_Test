@@ -1,4 +1,4 @@
-
+@eArsiv
   Feature: Uyumsoftta e Arsiv Fatura Olusturma
     Scenario:Kullanıcı e-Arşiv fatura oluşturur
       Given Kullanici "uyumsoftUrl" sayfasına gider
@@ -14,5 +14,6 @@
       And Birim Fiyat girilir
       And KDV oranı girilir
       And Tamam butonuna tıklar
+      #bu test çalışıyor
 
 
