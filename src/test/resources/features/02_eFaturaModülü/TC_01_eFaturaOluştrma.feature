@@ -15,7 +15,6 @@ Feature:Uyumsoftta e fatura oluşturma
     And KDV oranı girilir
     And Tamam butonuna tıklar
     Then Faturanın olustugu dogrulanir
-
    # Bu test çalışıyor
 
 
