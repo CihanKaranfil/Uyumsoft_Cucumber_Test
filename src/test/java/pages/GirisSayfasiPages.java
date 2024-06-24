@@ -13,4 +13,6 @@ public class GirisSayfasiPages {
     @FindBy(xpath = "//*[@id=\"btnCloseAnnouncement\"]") public WebElement bilgilendirmekapat;
     @FindBy(xpath = "//*[@id=\"layout\"]/div[2]/div/div[1]/div/ul/li[4]")  public WebElement keypadMenusu;
     @FindBy(xpath = "//*[@id=\"layout\"]/div[2]/div/div[1]/div/ul/li[4]/div/div/div/div[2]/div[3]") public WebElement cıkışİconu;
+    @FindBy(xpath = "//*[@id=\"Password\"]") public WebElement parola;
+    @FindBy(xpath = "//*[@id=\"form-login\"]/div[3]/div/text") public WebElement uyarıYazısı;
 }

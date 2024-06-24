@@ -50,4 +50,21 @@ public class GirisSayfası_StepDef {
     public void sayfayıKapar() {
         Driver.closeDriver();
     }
+
+    @When("Kullanici adi bilgilerini girer")
+    public void kullaniciAdiBilgileriniGirer() {
+        girisSayfasiPage.kullaniciAdi.click();
+        girisSayfasiPage.kullaniciAdi.sendKeys("Uyum");
+
+    }
+
+    @And("Kullanici parola bilgilerini girer")
+    public void kullaniciParolaBilgileriniGirer() {
+        girisSayfasiPage.parola.sendKeys("Uyumsoft");
+    }
+
+    @And("Hatalı kullanici adi ya da sifresi uyarısını dogrular")
+    public void hatalıKullaniciAdiYaDaSifresiUyarısınıDogrular() {
+       // girisSayfasiPage.uyarıYazısı.isDisplayed();
+    }
 }
