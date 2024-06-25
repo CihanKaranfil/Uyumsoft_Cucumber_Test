@@ -13,11 +13,12 @@ import utilities.Driver;
 
 public class GirisSayfası_StepDef {
     GirisSayfasiPages girisSayfasiPage = new GirisSayfasiPages();
+
     @When("Kullanıcı uyumsoft için kullanıcı adi ve parola girer")
     public void kullanıcıUyumsoftIçinKullanıcıAdiVeParolaGirer() {
         girisSayfasiPage.kullaniciAdi.click();
         girisSayfasiPage.kullaniciAdi.sendKeys(ConfigReader.getProperty("kullaniciAdi"),
-                Keys.TAB,ConfigReader.getProperty("parola"));
+                Keys.TAB, ConfigReader.getProperty("parola"));
     }
 
     @Then("Kullanıcı Oturum Aç butonuna tıklar")
@@ -65,6 +66,11 @@ public class GirisSayfası_StepDef {
 
     @And("Hatalı kullanici adi ya da sifresi uyarısını dogrular")
     public void hatalıKullaniciAdiYaDaSifresiUyarısınıDogrular() {
-       // girisSayfasiPage.uyarıYazısı.isDisplayed();
+         girisSayfasiPage.uyarıYazısı.isDisplayed();
+    }
+
+    @And("Kullanici Oturum Aç butonuna tıklar")
+    public void kullaniciOturumAçButonunaTıklar() {
+        girisSayfasiPage.oturumAcButton.click();
     }
 }
