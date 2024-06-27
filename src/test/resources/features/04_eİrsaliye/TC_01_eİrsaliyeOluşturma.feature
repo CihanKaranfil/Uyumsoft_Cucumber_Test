@@ -10,13 +10,15 @@ Feature: Uyumsoftta e-İrsaliye Oluşturma
     And Genel bilgilerde vkn tckn alanını doldurur
     And Adres bilgileri doldurulur
     And Teslimat adres bilgileri doldurulur
-    And Kaydet butonuna tıklar
+    And Kaydet butonuna tıklarr
     Then Kullanıcı e-İrsaliye oluşturuldugu dogrulanır
     And Bilgi mesajındaki tamam butonuna tıklar
-    And Sevk adres bilgilerine tıklar
+    And Sevk eden bilgilerine tıklar
     Then Araç plaka bilgileri girilir
     And Şoför bilgileri girilir
-    And Kaydet butonuna tıklar
+    #And Mal bilgileri ekle butonuna tıklar
+    #And Mal bilgileri doldurulur
+    #And Kaydet butonuna tıklar
 
 
 
