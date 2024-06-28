@@ -8,7 +8,7 @@ import pages.EİrsaliyePages;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class eİrsaliyeStepDef {
+public class eİrsaliyeStepDef  {
 
     EİrsaliyePages eIrsaliye = new EİrsaliyePages();
     Actions actions = new Actions(Driver.getDriver());
@@ -79,5 +79,25 @@ public class eİrsaliyeStepDef {
         eIrsaliye.soforBilgisi.click();
         eIrsaliye.soforTckn.sendKeys("54879865322", Keys.TAB , "Ali Can" , Keys.TAB , "Kaya");
         eIrsaliye.tamamButton2.click();
+    }
+
+    @And("Mal bilgileri ekle butonuna tıklar")
+    public void malBilgileriEkleButonunaTıklar() throws InterruptedException {
+        ReusableMethods.scroll(eIrsaliye.malHizmetArtı);
+        eIrsaliye.malHizmetArtı.click();
+        Thread.sleep(1000);
+    }
+
+    @And("Mal bilgileri doldurulur")
+    public void malBilgileriDoldurulur() {
+       actions.click(eIrsaliye.malHizmetEkle).perform();
+       eIrsaliye.malHizmetEkle.sendKeys("Kalem");
+       eIrsaliye.gonderilecekMiktar.click();
+       eIrsaliye.gonderilecekMiktar.clear();
+       eIrsaliye.gonderilecekMiktar.sendKeys("5");
+       eIrsaliye.birimFiyat.clear();
+       eIrsaliye.birimFiyat.sendKeys("100");
+       eIrsaliye.tamamButton3.click();
+
     }
 }

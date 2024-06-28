@@ -16,9 +16,11 @@ Feature: Uyumsoftta e-İrsaliye Oluşturma
     And Sevk eden bilgilerine tıklar
     Then Araç plaka bilgileri girilir
     And Şoför bilgileri girilir
-    #And Mal bilgileri ekle butonuna tıklar
-    #And Mal bilgileri doldurulur
-    #And Kaydet butonuna tıklar
+    And Mal bilgileri ekle butonuna tıklar
+    And Mal bilgileri doldurulur
+
+    #And Gönder butonuna ardından tamam a tıklar
+    #And e-İrsaliye gönderildigini  doğrular
 
 
 

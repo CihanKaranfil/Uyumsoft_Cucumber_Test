@@ -21,9 +21,14 @@ public class EİrsaliyePages {
     @FindBy(xpath = "//*[@id=\"alertModalMessage\"]") public WebElement bilgilendirme;
     @FindBy(xpath = "//*[@id=\"btnAlertModalOk\"]") public WebElement tamamButton;
     @FindBy(xpath = "//*[@id=\"addDriverModal\"]/div[3]/button[2]") public WebElement tamamButton2;
+    @FindBy(xpath = "//*[@id=\"AddDespatchLine\"]/div[3]/button[2]") public WebElement tamamButton3;
     @FindBy(xpath = "//*[@id=\"container1\"]/div[2]/div/div[1]/ul/li[1]/a") public WebElement sevkBilgileri;
     @FindBy(xpath = "//*[@id=\"licencePlate\"]") public WebElement plakaBilgisi;
     @FindBy(xpath = "//*[@id=\"tab5\"]/div[1]/div[2]/div[2]/header/button") public WebElement soforBilgisi;
     @FindBy(xpath = "//*[@id=\"txtDespatchDriverNationalityId\"]") public WebElement soforTckn;
+    @FindBy(xpath = "//*[@id=\"btnAddDespatchLine\"]/button") public WebElement malHizmetArtı;
+    @FindBy(xpath = "//*[@id=\"txtDespathcLineName\"]") public WebElement malHizmetEkle;
+    @FindBy(xpath = "//*[@id=\"txtDespathcLineDeliveredQuantity\"]") public WebElement gonderilecekMiktar;
+    @FindBy(xpath = "//*[@id=\"txtDespathcLineUnitPrice\"]") public WebElement birimFiyat;
 
 }
